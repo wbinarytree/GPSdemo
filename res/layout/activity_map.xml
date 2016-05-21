@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="省份:" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/spinner_provice"
+            android:layout_width="200dp"
+            android:layout_height="36dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/LinearLayout01"
+        android:layout_below="@+id/LinearLayout01"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="市:" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/spiner_city"
+            android:layout_width="200dp"
+            android:layout_height="36dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/LinearLayout02"
+        android:layout_below="@+id/LinearLayout02"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="县:" />
+
+        <TextView
+            android:id="@+id/TextView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/spiner_county"
+            android:layout_width="200dp"
+            android:layout_height="36dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_alignRight="@+id/LinearLayout03"
+        android:layout_below="@+id/LinearLayout03"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bc_btn"
+        android:textColor="#FFFFFF"
+        android:text="按地区查询" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="80dp" >
+
+        <TextView
+            android:id="@+id/TextView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="维修点名称:" />
+
+        <EditText
+            android:id="@+id/et_pd_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:imeOptions="actionNext"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/TextView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_name"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_alignRight="@+id/LinearLayout08"
+        android:layout_below="@+id/LinearLayout08"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bc_btn"
+        android:text="按名称查询"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_alignRight="@+id/LinearLayout08"
+        android:layout_below="@+id/button1"
+        android:background="@drawable/bc_btn"
+        android:layout_marginTop="5dp"
+        android:text="显示该地区周围维修点"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
